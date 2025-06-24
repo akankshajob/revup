@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REV-UP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17922330f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="her"></div>
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="index.php">PRODUCTS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <!-----------THE HEADING AFTER THE PIC -------->
+    <div class="first">
+    
+        <h1>Rev-Up</h1>
+        <p> Elevate Your Life, Elevate Your Energy </p>
+
+        <!-------3 BLOCKS STARTS -------------->
+    
+    <section class="content">
+        <div class="section">
+              <h2>Our Story</h2>
+              <ul>
+                 <li>Was born from a simple yet profound idea: to provide an energy drink that not only ignites your vitality but also elevates your entire life experience.</li>
+                <li> With this vision in mind, we embarked on a journey to create a beverage that redefines the way you approach energy.</li> 
+              </ul>
+        </div>
+
+    <!----------2ND BLOCKK ---------------------->
+        <div class="section">
+            <h2>The Rev-Up Difference</h2>
+            <ul>
+                <li><b>Premium Ingredients</b> <br>We believe in the power of nature. That's why Rev-Up is crafted with carefully selected, high-quality ingredients that work in harmony with your body.</br></li>
+                <li><b>Balanced Energy</b> <br>Our formula provides sustained energy without the jitters or crashes, allowing you to seize every moment and elevate your performance.</br></li>
+                <li><b>Lifestyle Enhancement</b> <br>Rev-Up is more than a drink; it's a lifestyle choice. By choosing us, you're choosing to elevate your energy, your focus, and your life to new heights.</br></li>
+            </ul>
+        </div>
+        <!-------1ST BLOCKKKK----------------->
+
+        <div class="section">
+           <h2>Our Mission</h2>
+             <ul>
+               <li>Our mission is clear: to empower you to lead a life that's energized, vibrant, and full of possibilities. </li>
+               <li>Want to be the driving force behind your ambitions, the boost you need to conquer challenges, and the catalyst for your extraordinary achievements.</li>
+            </ul>
+        </div>
+        <!-------------------------------JOIN THE GAME------------>
+    <div class="join">
+        <h2>JOIN THE REV-UP MOVEMENT</h2>
+        <p>Rev-Up isn't just a brand; it's a movement. <br>We invite you to join our community of individuals who are passionate about embracing life's challenges and opportunities with heightened energy and enthusiasm.</p>
+        <br>
+        <br>
+        <h1>OUR NEW FLAVOURS</h1>
+    
+    </div>
+</section>
+</div>
+<style>
+     /* Center the slider container horizontally and vertically */
+     body .slider-container {
+            margin-left: 439px;
+            justify-content: center;
+            align-items: center;
+            height: 70vh; /* Make the body take up the full viewport height */
+            margin: 322; /* Remove default margin */
+            
+        }
+        /* Styling for the slider container */
+        .slider-container {
+            position: relative;
+            width: 700px; /* Set your desired width */
+            overflow: hidden;
+            
+        }
+
+        /* Styling for the image wrapper */
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Styling for individual images */
+        .slider-image {
+            width: 700px; /* Set your desired image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Styling for next and previous buttons */
+        .slider-button {
+            position: absolute;
+            top: 36%;
+            transform: translateY(-50%);
+            background-color: white; /* Set your button background color */
+            color: black; /* Set your button text color */
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .prev-button {
+            left: 30px;
+        }
+
+        .next-button {
+            right: 30px;
+        }
+</style>
+</head>
+<body>
+<div class="slider-container">
+    <div class="slider-wrapper">
+        <!-- Add your image URLs here -->
+        <img class="slider-image" src="images/one.jpg" alt="Image 1">
+        <img class="slider-image" src="images/two.jpg" alt="Image 2">
+        <img class="slider-image" src="images/three3.jpg" alt="Image 3">
+        <img class="slider-image" src="images/four.jpg" alt="Image 4">
+        <img class="slider-image" src="images/five.jpg" alt="Image 5">
+        <img class="slider-image" src="images/six.jpg" alt="Image 6">
+        <img class="slider-image" src="images/seven.jpg" alt="Image 7">
+        <img class="slider-image" src="images/eight.jpg" alt="Image 8">
+       
+    </div>
+</div>
+<script>
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        // Calculate the translation value based on the index
+        const translateX = -index * 700; // 300px is the width of each image
+        sliderWrapper.style.transform = `translateX(${translateX}px)`;
+    }
+
+    // Function to handle next button click
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % 8;
+        showImage(currentIndex);
+    }
+
+    // Function to handle previous button click
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + 8) % 8;
+        showImage(currentIndex);
+    }
+
+    // Initial display
+    showImage(currentIndex);
+     
+    // Optional: You can add Next and Previous buttons to navigate through images
+    const nextButton = document.createElement('button');
+    nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>'; // Add a right arrow icon
+    nextButton.className = 'slider-button next-button'; // Add classes for styling
+    nextButton.addEventListener('click', nextImage);
+
+    const prevButton = document.createElement('button');
+    prevButton.innerHTML = '<i class="fa-sharp fa-solid fa-chevron-right" style="color: #000000;"></i>'; // Add a left arrow icon
+    prevButton.className = 'slider-button prev-button'; // Add classes for styling
+    prevButton.addEventListener('click', prevImage);
+
+    document.querySelector('.slider-container').appendChild(prevButton);
+    document.querySelector('.slider-container').appendChild(nextButton);
+  
+</script>
+<div class="faq-container">
+    <div class="faq-heading"><b></b>Frequently Asked Questions</b></div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q.1 : How can I purchase Rev-up?</div>
+        <div class="faq-answer">- You can purchase Rev-up on our website by visiting us on our online store <br> and selecting the product you'd like to buy. <br> Then you can add the items to your cart and follow the checkout process to make your purchase.<br></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q.2 : Is Rev-up suitable for athletes and fitness enthusiasts?</div>
+        <div class="faq-answer">- Absolutely! It is specially formulated to provide a boost of energy, <br>making it an ideal choice for athletes and fitness enthusiasts looking for a performance-enhancing beverage.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q.3 : Are there any special discounts or promotions available?</div>
+        <div class="faq-answer">- Yes, we frequently run special promotions and offer discounts on our products. <br>To stay updated on our latest promotions, check our website's Promotions page or subscribe to our newsletter.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q.4 : Can I return or exchange my purchase if I'm not satisfied?</div>
+        <div class="faq-answer">- Certainly! We offer a hassle-free return and exchange policy. <br>Then you can  contact our customer support team within 30 days of receiving your order to initiate the return or exchange process which will make it easy.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q.5 : Do you ship internationally?</div>
+        <div class="faq-answer">-  Yes, we offer international shipping.<br> We want energy drink enthusiasts from around the world to enjoy our products.<br> During the checkout process, you can select your country for your RevUp delivery.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q.6 : How can I stay updated on Rev-up ?</div>
+        <div class="faq-answer">- You can stay updated on Rev-up by subscribing to our newsletter send on your email. <br>Additionally, follow us on social media platforms like Facebook, Twitter, <br>and Instagram for the latest news, product launches, and promotions.</div>
+    </div>
+</div>
+<style>
+
+    body {
+    background-color: #000;
+    color: #f70606;
+    font-family: Arial, sans-serif;
+}
+@font-face {
+    font-family: blk;
+    src: url(spaceranger.ttf);
+}
+
+.faq-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align:center;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items equally between rows */
+}
+
+.faq-heading {
+    font-size: 24px;
+    margin: 20px 0;
+    width: 100%; /* Make the heading span the full width */
+    font-family:blk;
+    font-size: 56px;
+}
+
+.faq-item {
+    flex: 0 0 calc(33.33% - 20px); /* Distribute items evenly within each row */
+    margin-bottom: 20px;
+    border: 7px solid #000000; /* Specify border style correctly */
+    border-radius: 2px;
+    padding: 2px; /* Increase padding for better spacing */
+    background-color: #161515;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #00f118;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    font-size: 20px;
+    color: rgb(155, 155, 155);
+}
+
+</style>
+<div class="footer-basic">
+    <footer>
+        <h2>Get in Touch</h2>
+        <br>
+            <h5>Have questions or want to learn more about our products? We'd love to hear from you. Contact our friendly team, and let's elevate your journey together.</h5>
+            <br>
+        <div class="social"><a href="#"><i class="fa-brands fa-instagram fa-beat-fade" style="color: #d9d9d9;"></i></a><a href="#"><i class="fa-brands fa-snapchat fa-beat-fade" style="color: #eff0f0;"></i></a><a href="#"><i class="fa-brands fa-x-twitter fa-beat-fade" style="color: #f5f4f4;"></i></a><a href="#"><i class="fa-brands fa-facebook fa-beat-fade" style="color: #d9e4f7;"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+            <p class="copyright">REV-UP© 2023</p>
+    </footer>
+</div>
+<style>
+    .footer-basic {
+  padding:4px 0;
+  background-color:rgb(56, 58, 50);
+  color:#ececec;
+}
+.footer-basic h2 {
+    text-align: center;
+}
+
+.footer-basic h5 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(1, 217, 245); 
+    
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #fffdfd;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:18px;
+  color:#aaa;
+  margin: bottom 12px;;
+}
+</style>
+  <!---<footer>
+    <h2>Get in Touch</h2>
+    <p>Have questions or want to learn more about our products? We'd love to hear from you. Contact our friendly team, and let's elevate your journey together.</p>
+</footer>-->
+</body>
+</html>
