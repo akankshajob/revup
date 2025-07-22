@@ -54,18 +54,23 @@ The **Product Management System** is a dynamic software solution crafted to revo
 - 💳 **Checkout Flow** (Shipping, Payment & Order Summary)
 
 ---
-## Pictures
-<img src="images/home.png" alt="Logo" width="200">
-<img src="images/home2.png" alt="Logo" width="200">
-<img src="images/home3.png" alt="Logo" width="200">
-<img src="images/home4.png" alt="Logo" width="200">
-<img src="images/home5.png" alt="Logo" width="200">
-<img src="images/home6.png" alt="Logo" width="200">
-<img src="images/home7.png" alt="Logo" width="200">
-<img src="images/cart.png" alt="Logo" width="200">
-<img src="images/cart2.png" alt="Logo" width="200">
-<img src="images/purchase.png" alt="Logo" width="200">
-<img src="images/adminlog.png" alt="Logo" width="200">
+## 🖼️Pictures
+
+
+<p align="center">
+  <img src="images/home.png" alt="Home" width="600"><br><br>
+  <img src="images/home2.png" alt="Home2" width="600"><br><br>
+  <img src="images/home3.png" alt="Home3" width="600"><br><br>
+  <img src="images/home4.png" alt="Home4" width="600"><br><br>
+  <img src="images/home5.png" alt="Home5" width="600"><br><br>
+  <img src="images/home6.png" alt="Home6" width="600"><br><br>
+  <img src="images/home7.png" alt="Home7" width="600"><br><br>
+  <img src="images/cart.png" alt="Cart" width="600"><br><br>
+  <img src="images/cart2.png" alt="Cart2" width="600"><br><br>
+  <img src="images/purchase.png" alt="Purchase" width="600"><br><br>
+  <img src="images/adminlog.png" alt="Admin Login" width="600">
+</p>
+
 
 ## 💻 Tech Stack
 
