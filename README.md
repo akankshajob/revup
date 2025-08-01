@@ -25,14 +25,6 @@ The **Product Management System** is a dynamic software solution crafted to revo
 
 ---
 
-## 🧠 System Breakdown
-
-### 🔎 Existing System — Challenges
-- ❌ Lack of customer-centric strategy
-- ❌ Poor team collaboration
-- ❌ Limited use of analytics
-- ❌ No admin-level control or data security
-
 ### 💡 Proposed System — Solutions
 - ✅ Customer preference assessment & feedback loops
 - ✅ Secure **user data management**
