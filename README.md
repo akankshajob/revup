@@ -79,15 +79,6 @@ The **Product Management System** is a dynamic software solution crafted to revo
 
 ---
 
-## 📚 References
-
-1. [ResearchGate](https://www.researchgate.net)  
-2. [SlideShare](https://www.slideshare.net/apevp)  
-3. [PHP Gurukul](https://phpgurukul.com)  
-4. [IRJET](https://www.irjet.net)  
-
----
-
 
 ## 🏁 Developed By
 
