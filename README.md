@@ -3,7 +3,7 @@
 
 ---
 
-## 📌 Overvie
+## 📌 Overview
 
 The **Product Management System** is a dynamic software solution crafted to revolutionize the energy drink industry by streamlining the entire product lifecycle. From product development to personalized customer experiences, it brings innovation, efficiency, and smart decision-making — all in one place.
 
